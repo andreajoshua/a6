@@ -66,7 +66,9 @@ alt.layer(
     height=450
 )
 
-period = alt.Chart(mbta).mark_line().encode(
+period = alt.Chart(mbta).mark_line().add_selection(
+    brush
+).encode(
     x=new_x,
     y=alt.Y('average_ons', 
             axis=alt.Axis(title='Average ons')),
