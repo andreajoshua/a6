@@ -10,6 +10,8 @@ import pandas as pd
 mbta = pd.read_excel(r'/Users/andreajoshua/Downloads/MBTA_Line_and_Stop(1).xlsx')
 print(mbta.head())
 
+alt.data_transformers.enable('default', max_rows=None)
+
 
 # axis_labels = ("datum.label == 'time_period_01' ? 'VERY_EARLY_MORNING': datum.label == 'time_period_02' ? 'EARLY_AM : 'Frequent'")
 # 
